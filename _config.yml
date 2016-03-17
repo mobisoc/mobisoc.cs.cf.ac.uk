@@ -14,3 +14,16 @@ markdown: kramdown
 collections:
   projects:
     output: true
+
+gems: ['jekyll/scholar']
+
+scholar:
+  sort_by: year
+  order: descending
+  use_raw_bibtex_entry: true
+  bibliography_template: bib
+  details_dir: publications
+  details_layout: pub_details.html
+  details_link: Details
+
+
