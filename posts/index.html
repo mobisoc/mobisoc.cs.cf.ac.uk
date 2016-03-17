@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="demo-container mdl-grid">
+
+  <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col" style="min-height: 100%">
+    <h4>News</h4>
+
+
+{% for post in site.posts %}
+
+
+          <header>
+            <h4 class="post-title">{{ post.title }}</h4>
+            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+          </header>
+
+          <article class="post-content">
+            {{ post.content }}
+          </article>
+
+
+{% endfor %}
+
+
+          <footer>
+            <a href="{{site.url}}" class="mdl-button">Back to home...</a>
+          </footer>
+    </div>
+</div>
