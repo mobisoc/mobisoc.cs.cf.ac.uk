@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+
+
+        <div class="demo-container mdl-grid">
+
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col" style="min-height: 100%">
+            <h4>Projects</h4>
+
+              <div class="demo-crumbs mdl-color-text--grey-500" style="margin: 1em 0">A sample list of projects involving current and past members</div>
+
+              {% for project in site.projects %}
+                <div class="mdl-grid mdl-grid--no-spacing projectcontainer">
+                  <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone projecticon">
+                    {% if project.image %}        
+                      <img class="projectIcon" alt="project icon" src="{{ site.url }}/{{ project.image }}" />
+                    {% else %}
+                      <img class="projectIcon" alt="project icon" src="{{ site.url }}/images/cu.png" />
+                    {% endif %}
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone project">
+                    <h5 class="largetitle">{{ project.title }}</h5>
+                    <p class="projectdates">{{ project.start_date }} - {{ project.end_date }}</p>
+                    <p class='projectdesc'>{{ project.description }}</p>
+                    <a class="mdl-button" href='{{ project.url }}'>Project Page</a>
+                  </div>
+                </div>
+
+              {% endfor %}
+
+          </div>
+        </div>
