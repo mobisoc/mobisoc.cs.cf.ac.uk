@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="demo-container mdl-grid">
+    <div class="demo-content projectcard mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+
+      <header>
+        <h4 class="post-title">{{ page.title }}</h4>
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+      <footer>
+        <a href="{{site.url}}" class="mdl-button">Back to home...</a>
+      </footer>
+
+    </div>
+</div>

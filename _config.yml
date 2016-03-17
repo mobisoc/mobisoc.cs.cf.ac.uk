@@ -1,0 +1,29 @@
+# Site settings
+title: MoBiSoc Research Lab
+short_description: Mobile Bio-Social Research Lab at Cardiff University
+description: > # this means to ignore newlines until "baseurl:"
+  The Mobile Bio-Social Research Lab at Cardiff University is a collection of researchers interested in topics related to mobile and social computing, human behaviour, networks, sociality
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://127.0.0.1:4000" #"https://mobisoc.cs.cf.ac.uk" # the base hostname & protocol for your site
+twitter_username: mobisoccu
+github_username:  mobisoc
+
+# Build settings
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+
+gems: ['jekyll/scholar']
+
+scholar:
+  sort_by: year
+  order: descending
+  use_raw_bibtex_entry: true
+  bibliography_template: bib
+  details_dir: publications
+  details_layout: pub_details.html
+  details_link: Details
+
+

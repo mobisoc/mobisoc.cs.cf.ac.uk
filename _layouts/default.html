@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="mdl-demo">
+      
+   
+
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-200">
+    <div class="demo-ribbon">
+    </div>
+
+      {% include header.html %}
+      
+      <main class="demo-main mdl-layout__content">
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+
+    </div>
+
+    <script src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+  </body>
+</html>

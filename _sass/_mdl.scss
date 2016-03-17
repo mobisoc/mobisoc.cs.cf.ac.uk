@@ -56,11 +56,9 @@
   margin-bottom: 0 !important;
 }
 
-.projecttitle {
+.largetitle {
   font-weight: 300;
 }
-
-
 
 .projecticon img {
   margin-top: 24px;
@@ -113,4 +111,18 @@
 
 .demo-footer .mdl-mini-footer--link-list a {
   font-size: 13px;
+}
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: #eee;
+        }
+    }
 }
