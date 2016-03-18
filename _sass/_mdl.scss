@@ -142,3 +142,47 @@ html, body p{
   width: 100px;
   height: 100px;
 }
+
+
+
+pre {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word; }
+
+.bibliography {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em !important;
+  margin-bottom: 1em; }
+
+.bibliography li {
+  margin-bottom: 1em; }
+
+.details {
+  background: #fafafa;
+  padding: .45em;
+  border-radius: 2px;
+  font-size: .8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2980b9;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.2em;
+  vertical-align: middle;
+  font-family: "Roboto","Helvetica","Aria";
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.details:hover {
+  background: #f1f1f1; }
