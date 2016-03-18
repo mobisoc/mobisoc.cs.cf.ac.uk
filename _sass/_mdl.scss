@@ -111,6 +111,11 @@ html, body p{
 
 .demo-footer {
   padding-left: 40px;
+  min-height: 2.5em;
+}
+
+.demo-layout.is-small-screen .demo-footer {
+  min-height: 2.1em;
 }
 
 .demo-footer .mdl-mini-footer--link-list a {
@@ -120,6 +125,11 @@ html, body p{
 .intro {
   font-size: 20px;
   line-height: 1.5;
+}
+
+.demo-layout.is-small-screen .intro {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .icon {
@@ -136,11 +146,20 @@ html, body p{
     }
 }
 
+
+.demo-layout.is-small-screen .mainlogo{
+  width: 90px;
+  height: 90px;
+  margin-top: 28px;
+  max-width: 100%;
+}
+
 .mainlogo {
   margin: auto;
   margin-top: 42px;
   width: 100px;
   height: 100px;
+  max-width: 100%;
 }
 
 
