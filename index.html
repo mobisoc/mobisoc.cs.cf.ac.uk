@@ -32,8 +32,8 @@ layout: default
             <h4>Projects</h4>
 
             <div class="demo-crumbs mdl-color-text--grey-500" style="margin: 1em 0">A sample list of projects involving current and past members</div>
-              {% assign items = site.projects | sort: 'end_date' %}
-              {% for project in items reversed limit:2 %}
+              {% assign items = site.projects | sort: 'end_date' | reverse %}
+              {% for project in items limit:2 %}
                 <div class="mdl-grid mdl-grid--no-spacing projectcontainer">
                   <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone projecticon">
                     {% if project.image %}        
@@ -61,7 +61,7 @@ layout: default
 
             <div class="demo-crumbs mdl-color-text--grey-500" style="margin: 1em 0">A sample list of publications involving current and past members</div>
 
-              {% bibliography --max 5 %}          
+              {% bibliography --max 7 %}          
             
               <a href="publications" class="mdl-button">View more</a>
 
