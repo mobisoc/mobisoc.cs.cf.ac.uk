@@ -12,7 +12,7 @@ layout: default
 
 
           <header>
-            <h4 class="post-title">{{ post.title }}</h4>
+            <h4 class="largetitle">{{ post.title }}</h4>
             <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
           </header>
 
@@ -24,8 +24,8 @@ layout: default
 {% endfor %}
 
 
-          <footer>
-            <a href="{{site.url}}" class="mdl-button">Back to home...</a>
+          <footer class="lineabovefooter">
+            <a href="{{site.url}}" class="mdl-button">Home</a>
           </footer>
     </div>
 </div>

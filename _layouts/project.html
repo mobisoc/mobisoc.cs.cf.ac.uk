@@ -16,11 +16,11 @@ layout: default
           <h5 class="largetitle">{{ page.title }}</h5>
           <p class="projectdates">{{ page.start_date }} - {{ page.end_date }}</p>
           <p class='projectdesc'>{{ content }}</p>
-          {% if page.project_url %}<a href="{{ page.project_url }}">Project Website</a>{% endif %}
+          {% if page.project_url %}<a class="mdl-button" href="{{ page.project_url }}">Website</a>{% endif %}
         </div>
       </div>
       <footer>
-        <a href="{{site.url}}" class="mdl-button">Home</a> <a href="{{site.url}}/projects/" class="mdl-button">Projects</a>
+        <a href="{{site.url}}" class="mdl-button">Home</a> <a href="{{site.url}}/projects/" class="mdl-button">More Projects</a>
       </footer>
     </div>
 </div>
