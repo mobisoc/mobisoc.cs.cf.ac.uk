@@ -4,7 +4,7 @@ short_description: Mobile Bio-Social Research Lab at Cardiff University
 description: > # this means to ignore newlines until "baseurl:"
   The Mobile Bio-Social Research Lab at Cardiff University is a collection of researchers interested in topics related to mobile and social computing, human behaviour, networks and sociality. We're focused on the impact of functional developments of mobile devices, looking primarily at the smartphone-user relationship.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:4000" #"https://mobisoc.cs.cf.ac.uk" # the base hostname & protocol for your site
+url: "https://mobisoc.cs.cf.ac.uk" # the base hostname & protocol for your site #http://127.0.0.1:4000
 twitter_username: mobisoccu
 github_username:  mobisoc
 logo_image: "images/mobisoc_logo.png"
